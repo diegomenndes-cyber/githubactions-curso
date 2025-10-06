@@ -24,3 +24,8 @@ jobs:
         run: Write-Output "Windos String"
       - name: Error steps
         run: doesnotexist
+  run-fazer-volume:
+    runs-on: runner
+    steps:
+      - name: volume
+        run: echo "Hello Word"      
