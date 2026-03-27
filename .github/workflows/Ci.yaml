@@ -17,4 +17,4 @@ jobs:
       - name: Mostrar estrutura .github/workflows
         run: |
           echo " == ESTRUTURA DE DIRETORIO == "
-          ls -la .github/workfloes
+          ls -la .github/workflows
