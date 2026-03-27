@@ -1,0 +1,20 @@
+nome: "Action de Ci - Primeira Action"
+
+on:
+  push:
+    branches: [main]
+env:
+    NODE_VERSION: "18"
+Jobs:
+  demostrar estrutura:
+    nome: " Nome acima de demostrar Estrutura"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Codigo
+        uses: actions/checkout@v4
+        
+      - name: Mostrar estrutura .github/workflows
+        run: |
+          echo " == ESTRUTURA DE DIRETORIO == "
+          ls -la .github/workfloes
