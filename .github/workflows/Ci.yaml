@@ -1,13 +1,13 @@
-nome: "Action de Ci - Primeira Action"
+name: "Action de Ci - Primeira Action"
 
 on:
   push:
     branches: [main]
 env:
     NODE_VERSION: "18"
-Jobs:
-  demostrar estrutura:
-    nome: " Nome acima de demostrar Estrutura"
+jobs:
+  demostrar-estrutura:
+    name: " Nome acima de demostrar Estrutura"
     runs-on: ubuntu-latest
 
     steps:
