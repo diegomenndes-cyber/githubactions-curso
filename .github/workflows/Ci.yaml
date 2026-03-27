@@ -18,3 +18,8 @@ jobs:
         run: |
           echo " == ESTRUTURA DE DIRETORIO == "
           ls -la .github/workflows
+
+      - name: Variavel
+        run: |
+          echo " == Valor da variavel == "
+          echo " Variavel env: ${{env.NODE_VERSION}}"
