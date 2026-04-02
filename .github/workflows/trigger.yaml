@@ -20,4 +20,4 @@ jobs:
     - name: Nova action
       run: |
         echo "Workflow disparado por push"
-        echo "Commit ${{git.sha}}"
+        echo "Commit ${{github.sha}}"
