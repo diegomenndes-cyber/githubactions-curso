@@ -17,7 +17,7 @@ jobs:
     - name: Checkout do Codigo
       uses: actions/checkout@v4
 
-    - name:
+    - name: Nova action
       run: |
         echo "Workflow disparado por push"
-        echo"Commit ${{git.sha}}"
+        echo "Commit ${{git.sha}}"
