@@ -1,0 +1,23 @@
+name: Push Trigger Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'src/**'
+      - ' README.md'
+
+jobs:
+  push_job:
+    runs-on: ubuntu-latest
+
+  staps:
+    - name: Checkout do Codigo
+      uses: actions/checkout@v4
+
+    - name:
+      run: |
+        echo "Workflow disparado por push"
+        echo"Commit ${{git.sha}}"

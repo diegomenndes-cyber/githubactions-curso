@@ -1,0 +1,19 @@
+on:
+  schedule: 
+    # execuda de forma agendada
+    - cron: '55 00 * * *'
+  workflow_dispatch:
+jobs:
+  scheduled-job:
+    runs-on: ubuntu-latest
+     
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+    
+      - name: Informacoes do Agendamento
+        run: |
+          echo " workflow disparado"
+          echo " data atual:$(data)"
+          echo " HOra UTM: $(date -u)"
+          echo " Timezone: $(date+%Z)"
